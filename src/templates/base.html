@@ -1,0 +1,56 @@
+<!doctype html>
+
+{% load static %}
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Metadata -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="">
+  <link rel="icon" href="" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  {% block head %} {% endblock %}
+</head>
+
+<body>
+    <div class="navbar-container">
+        <a href="" class="navbar-title"><p>Cemex</p></a>
+        <div>
+            <div class="navbar-item-container">
+                <a href="" class="navbar-item"><p>Inicio</p><div class="navbar-item-underline"></div></a>
+                <a href="" class="navbar-item"><p>Proyectos</p><div class="navbar-item-underline"></div></a>
+                <a href="" class="navbar-item"><p>Contratistas</p><div class="navbar-item-underline"></div></a>
+                <a href="" class="navbar-item"><p>Perfil</p><div class="navbar-item-underline"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block body %} {% endblock %}
+    </div>
+
+    {% block scripts %} {% endblock %}
+</body>
+</html>

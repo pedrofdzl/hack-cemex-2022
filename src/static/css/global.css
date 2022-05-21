@@ -1,0 +1,33 @@
+:root {
+    --white: #FFFFFF;
+    --body: #18191A;
+    --secondary: #242526;
+    --orange: #FD6A02;
+}
+
+/* FONTS */
+/* 
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+*/
+
+/* STRUCTURE */
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
